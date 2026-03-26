@@ -54,11 +54,22 @@ export default function HomePage() {
           <p className="text-[10px] tracking-[0.2em] uppercase text-muted text-center mb-5">
             Trusted by leaders at
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-60 grayscale">
-            {["Microsoft", "Deloitte", "Telefónica", "ProSiebenSat.1", "S-Kreditpartner"].map((logo) => (
-              <span key={logo} className="text-sm font-medium text-foreground tracking-wide">
-                {logo}
-              </span>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-50 grayscale">
+            {[
+              { src: "/assets/logos/Microsoft.svg", alt: "Microsoft", h: "h-6" },
+              { src: "/assets/logos/Deloitte.svg", alt: "Deloitte", h: "h-5" },
+              { src: "/assets/logos/Telefonica.svg", alt: "Telefónica", h: "h-6" },
+              { src: "/assets/logos/Pro7-Sat1-Media-SE.svg", alt: "ProSiebenSat.1 Media SE", h: "h-6" },
+              { src: "/assets/logos/S-Kreditpartner.svg", alt: "S-Kreditpartner", h: "h-5" },
+            ].map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={120}
+                height={30}
+                className={`${logo.h} w-auto`}
+              />
             ))}
           </div>
           {/* Platform Stats + Awards */}
