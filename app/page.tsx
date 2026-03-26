@@ -47,6 +47,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trust Bar — Above the Fold */}
+      <section className="border-y border-subtle py-6 md:py-8 px-6">
+        <div className="max-w-[1040px] mx-auto">
+          {/* Client Logos */}
+          <p className="text-[10px] tracking-[0.2em] uppercase text-muted text-center mb-5">
+            Trusted by leaders at
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-60 grayscale">
+            {["Microsoft", "Deloitte", "Telefónica", "ProSiebenSat.1", "S-Kreditpartner"].map((logo) => (
+              <span key={logo} className="text-sm font-medium text-foreground tracking-wide">
+                {logo}
+              </span>
+            ))}
+          </div>
+          {/* Platform Stats + Awards */}
+          <div className="mt-6 pt-5 border-t border-subtle flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-muted">
+            <span className="flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="5" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+              64.2K Followers
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" /><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none" /></svg>
+              866 Videos
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>
+              329 Podcast Episodes
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              Top 20 Leadership Influencer &rsquo;25 &amp; &rsquo;26
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              Personio Top Voice &rsquo;23
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof Bar */}
       <section className="bg-navy text-white py-12 md:py-16">
         <div className="max-w-[1040px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
