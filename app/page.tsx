@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { InstagramFeed } from "./components/InstagramEmbed";
 
 
 export const metadata: Metadata = {
@@ -241,34 +242,13 @@ export default function HomePage() {
       </section>
 
       {/* Instagram / Social Proof */}
-      <section className="py-20 md:py-30 px-6 bg-[#F5F5F7]">
-        <div className="max-w-[1040px] mx-auto text-center">
-          <p className="text-xs tracking-[0.2em] uppercase text-muted mb-4">
-            Follow the Journey
-          </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold">
-            Real leadership advice. Every week.
-          </h2>
-          <p className="mt-4 text-muted max-w-[560px] mx-auto leading-relaxed">
-            Kai shares practical leadership tips, real-world scenarios and honest
-            coaching insights on Instagram.
-          </p>
-          <a
-            href="https://www.instagram.com/managing.difficult.people/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-6 bg-navy text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-navy-light transition-colors"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" />
-              <circle cx="12" cy="12" r="5" />
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-            </svg>
-            Follow @managing.difficult.people
-          </a>
-          {/* TODO: Instagram video embeds hier einfügen sobald Kai die Reel-URLs liefert */}
-        </div>
-      </section>
+      <InstagramFeed
+        urls={[
+          "https://www.instagram.com/managing.difficult.people/reel/DWN0_BojAG1/",
+          "https://www.instagram.com/managing.difficult.people/reel/DRJgY-BjHlG/",
+          "https://www.instagram.com/managing.difficult.people/p/DWTuCM9DPOu/",
+        ]}
+      />
 
       {/* Free Resource CTA */}
       <section className="bg-navy text-white py-20 md:py-24 px-6">
