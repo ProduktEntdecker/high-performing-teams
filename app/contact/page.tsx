@@ -28,18 +28,20 @@ export default function ContactPage() {
       <section className="pb-20 md:pb-30 px-6">
         <div className="max-w-[680px] mx-auto">
           <div className="border border-subtle rounded-lg p-12 md:p-16 text-center bg-[#F5F5F7]">
-            <p className="text-muted text-sm mb-4">[Calendly Embed]</p>
             <p className="font-serif text-2xl font-bold">Book Your Discovery Call</p>
             <p className="text-sm text-muted mt-3">
               Choose a time that works for you. The call is via Zoom and takes 30 minutes.
             </p>
-            <div className="mt-8 border border-subtle rounded bg-white p-8">
-              <p className="text-xs text-muted">
-                Calendly widget will be embedded here.
-                <br />
-                Replace this placeholder with the Calendly inline widget script.
-              </p>
-            </div>
+            {/* TODO: Calendly-Widget einbetten sobald URL da ist */}
+            <a
+              href="#"
+              className="inline-block mt-8 bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors"
+            >
+              Choose a Time &rarr;
+            </a>
+            <p className="text-xs text-muted mt-3">
+              Calendly booking link will be connected shortly.
+            </p>
           </div>
 
           <div className="mt-12 space-y-6">

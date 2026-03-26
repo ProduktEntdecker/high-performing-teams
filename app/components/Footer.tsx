@@ -24,21 +24,7 @@ export function Footer() {
                   <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
                 </svg>
               </a>
-              {/* Skool Community — URL wird nachgeliefert */}
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Skool Community"
-                className="text-muted hover:text-navy transition-colors"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </a>
+              {/* Skool Community — ausgeblendet bis URL da ist */}
             </div>
           </div>
           <div className="flex flex-col md:items-end gap-3">
@@ -52,15 +38,7 @@ export function Footer() {
               <Link href="/contact" className="hover:text-navy transition-colors">
                 Contact
               </Link>
-              {/* Skool Community — URL wird nachgeliefert */}
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-navy transition-colors"
-              >
-                Community
-              </a>
+              {/* Community-Link kommt sobald Skool-URL da ist */}
             </div>
             <Link
               href="/contact"

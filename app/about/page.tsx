@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -11,20 +12,32 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 md:py-36 px-6">
-        <div className="max-w-[720px] mx-auto text-center">
-          <p className="text-xs tracking-[0.2em] uppercase text-muted mb-6">
-            About Kai Boyd
-          </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.15] font-bold">
-            I don&rsquo;t coach leadership theory.
-            <br />
-            I coach what works in the room on Monday morning.
-          </h1>
-          <p className="mt-6 text-lg text-muted leading-relaxed">
-            36 years. Military, corporate, coaching.
-            Here is what that actually taught me.
-          </p>
+      <section className="py-24 md:py-32 px-6">
+        <div className="max-w-[1040px] mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-xs tracking-[0.2em] uppercase text-muted mb-6">
+              About Kai Boyd
+            </p>
+            <h1 className="font-serif text-4xl md:text-5xl leading-[1.15] font-bold">
+              I don&rsquo;t coach leadership theory.
+              <br />
+              I coach what works in the room on Monday morning.
+            </h1>
+            <p className="mt-6 text-lg text-muted leading-relaxed">
+              36 years. Military, corporate, coaching.
+              Here is what that actually taught me.
+            </p>
+          </div>
+          <div className="aspect-[3/4] rounded overflow-hidden">
+            <Image
+              src="/assets/images/Boyd-17.webp"
+              alt="Kai Boyd — Leadership Coach"
+              width={600}
+              height={800}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 

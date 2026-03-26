@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { InstagramFeed } from "./components/InstagramEmbed";
 
 
 export const metadata: Metadata = {
@@ -14,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 md:py-40 px-6">
+      <section className="py-24 md:py-28 px-6">
         <div className="max-w-[720px] mx-auto text-center">
           <p className="text-xs tracking-[0.2em] uppercase text-muted mb-6">
             Leadership Coaching
@@ -28,12 +27,20 @@ export default function HomePage() {
             Most leadership advice is written for people who&rsquo;ve never led anyone.
             This isn&rsquo;t that.
           </p>
-          <Link
-            href="/webinar"
-            className="inline-block mt-8 bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors"
-          >
-            Watch the Free Masterclass
-          </Link>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors"
+            >
+              Book a Discovery Call
+            </Link>
+            <Link
+              href="/webinar"
+              className="border border-navy text-navy px-10 py-4 rounded text-base font-semibold hover:bg-navy hover:text-white transition-colors"
+            >
+              Watch the Free Masterclass
+            </Link>
+          </div>
           <p className="mt-3 text-xs text-muted">
             4 hours. No fluff. What 36 years actually taught me.
           </p>
@@ -162,7 +169,13 @@ export default function HomePage() {
                 Get the Course &rarr;
               </a>
             </div>
-            <div className="border border-subtle rounded p-8 md:p-10">
+            <div className="border border-subtle rounded p-8 md:p-10 relative">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-navy rounded-t" />
+              <div className="absolute -top-3 left-8">
+                <span className="text-[10px] tracking-wider uppercase bg-navy text-white px-2 py-0.5 rounded">
+                  Most Popular
+                </span>
+              </div>
               <p className="text-xs tracking-[0.15em] uppercase text-muted">6-Month Programme</p>
               <h3 className="font-serif text-2xl font-bold mt-3">
                 The Leadership Edge
@@ -242,13 +255,33 @@ export default function HomePage() {
       </section>
 
       {/* Instagram / Social Proof */}
-      <InstagramFeed
-        urls={[
-          "https://www.instagram.com/managing.difficult.people/reel/DWN0_BojAG1/",
-          "https://www.instagram.com/managing.difficult.people/reel/DRJgY-BjHlG/",
-          "https://www.instagram.com/managing.difficult.people/p/DWTuCM9DPOu/",
-        ]}
-      />
+      <section className="py-20 md:py-30 px-6 bg-[#F5F5F7]">
+        <div className="max-w-[1040px] mx-auto text-center">
+          <p className="text-xs tracking-[0.2em] uppercase text-muted mb-4">
+            64,200+ Followers on Instagram
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold">
+            Real leadership advice. Every week.
+          </h2>
+          <p className="mt-4 text-muted max-w-[560px] mx-auto leading-relaxed">
+            Practical tips, real scenarios, honest coaching insights.
+            Join 64,000+ leaders who follow Kai on Instagram.
+          </p>
+          <a
+            href="https://www.instagram.com/managing.difficult.people/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-6 bg-navy text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-navy-light transition-colors"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            Follow @managing.difficult.people
+          </a>
+        </div>
+      </section>
 
       {/* Free Resource CTA */}
       <section className="bg-navy text-white py-20 md:py-24 px-6">
