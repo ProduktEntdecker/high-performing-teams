@@ -46,6 +46,11 @@ export default function PrivacyPage() {
                 (IP address, browser type, pages visited, time of access). This data is processed
                 for security purposes and to ensure the functionality of the website.
               </li>
+              <li>
+                <strong>Analytics data</strong> collected by Google Analytics 4 with your consent
+                (pages visited, session duration, referral source, device type). IP addresses are
+                not logged in full.
+              </li>
             </ul>
           </div>
 
@@ -62,6 +67,10 @@ export default function PrivacyPage() {
               <li>
                 <strong>Website operation:</strong> To provide and secure this website.
                 Legal basis: legitimate interest (Art. 6(1)(f) GDPR).
+              </li>
+              <li>
+                <strong>Website analytics:</strong> To understand how visitors use this website
+                and improve it. Legal basis: your consent (Art. 6(1)(a) GDPR).
               </li>
             </ul>
           </div>
@@ -134,12 +143,64 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="font-medium text-foreground text-base mb-2">
-              7. Cookies
+              7. Cookies and Analytics
             </h2>
             <p>
-              This website does not use cookies for tracking or advertising purposes.
+              This website uses cookies only after you have given your explicit consent
+              via the cookie banner.
+            </p>
+            <div className="mt-3">
+              <p className="font-medium text-foreground">Google Analytics 4</p>
+              <p className="mt-1">
+                With your consent, we use Google Analytics 4 (provided by Google Ireland Limited,
+                Gordon House, Barrow Street, Dublin 4, Ireland) to analyze how visitors use this
+                website. Google Analytics uses cookies to collect anonymized usage data such as
+                pages visited, time on site, and referral sources. This data helps us improve the
+                website. No personal data is shared with advertisers.
+              </p>
+              <ul className="list-disc pl-5 mt-2 space-y-1">
+                <li>
+                  <strong>Legal basis:</strong> Your consent (Art. 6(1)(a) GDPR). You can
+                  withdraw consent at any time by clearing your browser cookies or declining
+                  in the cookie banner.
+                </li>
+                <li>
+                  <strong>Data transfer:</strong> Data may be transferred to Google servers in
+                  the US. Google is certified under the EU-US Data Privacy Framework.
+                </li>
+                <li>
+                  <strong>IP anonymization:</strong> GA4 does not log full IP addresses.
+                </li>
+                <li>
+                  <strong>Opt-out:</strong> You can prevent data collection by declining cookies
+                  or by installing the{" "}
+                  <a
+                    href="https://tools.google.com/dlpage/gaoptout"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy hover:underline"
+                  >
+                    Google Analytics Opt-out Browser Add-on
+                  </a>
+                  .
+                </li>
+              </ul>
+              <p className="mt-2">
+                For details, see{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy hover:underline"
+                >
+                  Google&rsquo;s Privacy Policy
+                </a>
+                .
+              </p>
+            </div>
+            <p className="mt-3">
               Essential cookies may be set by our hosting provider (Vercel) for security
-              and performance purposes.
+              and performance purposes. These do not require consent.
             </p>
           </div>
 
