@@ -16,19 +16,13 @@ export function Navigation() {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="/programs" className="text-sm hover:text-navy transition-colors">
-            Programmes
+            Course
           </Link>
-          <Link href="/webinar" className="text-sm hover:text-navy transition-colors">
-            Free Masterclass
+          <Link href="/email-course" className="text-sm hover:text-navy transition-colors">
+            Free Email Course
           </Link>
           <Link href="/about" className="text-sm hover:text-navy transition-colors">
             About
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm bg-navy text-white px-5 py-2 rounded hover:bg-navy-light transition-colors"
-          >
-            Book a Call
           </Link>
         </div>
 
@@ -54,20 +48,13 @@ export function Navigation() {
       {open && (
         <div id="mobile-menu" className="md:hidden border-t border-subtle bg-background px-6 py-4 space-y-4">
           <Link href="/programs" className="block text-sm" onClick={() => setOpen(false)}>
-            Programmes
+            Course
           </Link>
-          <Link href="/webinar" className="block text-sm" onClick={() => setOpen(false)}>
-            Free Masterclass
+          <Link href="/email-course" className="block text-sm" onClick={() => setOpen(false)}>
+            Free Email Course
           </Link>
           <Link href="/about" className="block text-sm" onClick={() => setOpen(false)}>
             About
-          </Link>
-          <Link
-            href="/contact"
-            className="block text-sm bg-navy text-white px-5 py-2 rounded text-center"
-            onClick={() => setOpen(false)}
-          >
-            Book a Call
           </Link>
         </div>
       )}

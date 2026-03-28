@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | High Performing Teams",
   },
   description:
-    "36 years of leadership experience. Direct, practical coaching for busy executives. Programmes, masterclasses and resources by Kai Boyd.",
+    "36 years of leadership experience. Direct, practical coaching for managers dealing with difficult employees. Free email course and $99 video course by Kai Boyd.",
 };
 
 export default function RootLayout({

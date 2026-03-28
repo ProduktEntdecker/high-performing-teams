@@ -39,7 +39,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>
                 <strong>Contact information</strong> you provide voluntarily (name, email address)
-                when registering for the masterclass or newsletter.
+                when registering for the email course or newsletter.
               </li>
               <li>
                 <strong>Usage data</strong> collected automatically by our hosting provider
@@ -56,16 +56,12 @@ export default function PrivacyPage() {
             <p>We process your personal data for the following purposes:</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>
-                <strong>Newsletter and masterclass registration:</strong> To send you the requested
+                <strong>Newsletter and email course registration:</strong> To send you the requested
                 content and the Leadership Brief newsletter. Legal basis: your consent (Art. 6(1)(a) GDPR).
               </li>
               <li>
                 <strong>Website operation:</strong> To provide and secure this website.
                 Legal basis: legitimate interest (Art. 6(1)(f) GDPR).
-              </li>
-              <li>
-                <strong>Discovery calls:</strong> To schedule and conduct discovery calls you request.
-                Legal basis: pre-contractual measures (Art. 6(1)(b) GDPR).
               </li>
             </ul>
           </div>
@@ -93,11 +89,10 @@ export default function PrivacyPage() {
                 </p>
               </div>
               <div>
-                <p className="font-medium text-foreground">Course Platform: Ablefy</p>
+                <p className="font-medium text-foreground">Course Platform: Skool</p>
                 <p>
-                  When you purchase a course, you are redirected to Ablefy (operated by
-                  namotto academies &amp; friends GmbH &amp; Co. KG, Berlin). Payment processing
-                  and course delivery are handled by Ablefy under their own privacy policy.
+                  When you purchase a course, you are redirected to Skool. Payment processing
+                  and course delivery are handled by Skool under their own privacy policy.
                 </p>
               </div>
             </div>

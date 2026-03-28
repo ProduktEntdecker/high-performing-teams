@@ -56,7 +56,7 @@ export default function AboutPage() {
               After three decades of leading teams, departments, and organisations, I started coaching. Not because I had run out of things to do &mdash; but because I had spent 30 years learning what worked and what didn&rsquo;t. It made no sense to keep that to myself.
             </p>
             <p>
-              Today I work from Munich with an international audience. My podcast, Instagram, and coaching programmes reach leaders across industries and continents. But the work is always the same: practical, direct, and designed for people who have real responsibilities and no time for theory.
+              Today I work from Munich with an international audience. My podcast, Instagram, and courses reach leaders across industries and continents. But the work is always the same: practical, direct, and designed for people who have real responsibilities and no time for theory.
             </p>
           </div>
         </div>
@@ -70,8 +70,8 @@ export default function AboutPage() {
             { number: "1,000+", label: "Leaders coached and trained" },
             { number: "5 Dysfunctions", label: "Teaches and applies Lencioni's framework" },
             { number: "4,500+", label: "Podcast listeners per episode" },
-            { number: "14+", label: "Active social media channels" },
-            { number: "10+", label: "Years running leadership programmes" },
+            { number: "120,000+", label: "Followers across platforms" },
+            { number: "10+", label: "Years coaching leaders" },
           ].map((marker) => (
             <div key={marker.label} className="text-center">
               <p className="font-serif text-2xl md:text-3xl font-bold text-navy">{marker.number}</p>
@@ -88,15 +88,15 @@ export default function AboutPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold">How I work.</h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed">
               <p>
-                Most coaching programmes are built around what the coach wants to teach.
+                Most leadership content is built around what the coach wants to teach.
                 Mine is built around what you actually need to fix.
               </p>
               <p>
-                Every programme starts with an honest assessment of where your leadership
-                is costing you &mdash; in time, in team performance, in your own stress levels.
+                Every lesson starts with the specific situation you&rsquo;re in &mdash;
+                the difficult team member, the conversation you&rsquo;ve been avoiding, the pattern that keeps repeating.
               </p>
               <p>
-                Then we address exactly that. Not a generic curriculum. A specific plan.
+                Then I give you exactly what to do about it. No generic frameworks. Specific steps.
               </p>
             </div>
           </div>
@@ -146,19 +146,15 @@ export default function AboutPage() {
             <p>
               I&rsquo;m not a therapist. I work on professional performance, not personal psychology.
             </p>
-            <p>
-              I&rsquo;m not available to everyone. My programmes have limited places because the work
-              requires direct access to me. That means I can only work with a small number of leaders at a time.
-            </p>
           </div>
           <p className="mt-8 text-white/70 italic text-sm">
-            If that sounds like it fits, let&rsquo;s talk.
+            If that sounds like it fits, start with the free email course.
           </p>
           <Link
-            href="/contact"
+            href="/email-course"
             className="inline-block mt-6 bg-white text-navy px-8 py-3.5 rounded text-sm font-medium hover:bg-white/90 transition-colors"
           >
-            Book a Discovery Call
+            Get the Free Email Course
           </Link>
         </div>
       </section>
@@ -167,23 +163,25 @@ export default function AboutPage() {
       <section className="py-20 md:py-24 px-6">
         <div className="max-w-[680px] mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold">
-            Ready to find out if we&rsquo;re a fit?
+            Ready to start?
           </h2>
           <p className="mt-4 text-muted leading-relaxed">
-            The first step is a 30-minute call.
-            No commitment. No sales pitch. Just an honest conversation.
+            Start with the free email course, or go straight to the full course.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block mt-8 bg-navy text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-navy-light transition-colors"
-          >
-            Book a Discovery Call
-          </Link>
-          <p className="mt-4">
-            <Link href="/programs" className="text-sm text-navy hover:underline">
-              Or explore the programmes first &rarr;
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/email-course"
+              className="bg-navy text-white px-8 py-3.5 rounded text-sm font-medium hover:bg-navy-light transition-colors"
+            >
+              Get the Free Email Course
             </Link>
-          </p>
+            <Link
+              href="/programs"
+              className="border border-navy text-navy px-8 py-3.5 rounded text-sm font-medium hover:bg-navy hover:text-white transition-colors"
+            >
+              See the Course &mdash; $99
+            </Link>
+          </div>
         </div>
       </section>
     </>

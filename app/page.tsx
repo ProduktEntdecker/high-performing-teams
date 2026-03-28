@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Leadership Coaching for Executives | High Performing Teams",
   description:
-    "36 years of leadership experience. Direct, practical coaching for busy executives. Programmes, masterclasses and resources by Kai Boyd.",
+    "36 years of leadership experience. Direct, practical coaching for managers dealing with difficult employees. Free email course and self-paced video course by Kai Boyd.",
 };
 
 export default function HomePage() {
@@ -16,34 +16,31 @@ export default function HomePage() {
       <section className="py-24 md:py-28 px-6">
         <div className="max-w-[720px] mx-auto text-center">
           <p className="text-xs tracking-[0.2em] uppercase text-muted mb-6">
-            Leadership Coaching
+            LEADERSHIP COACHING
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.15] font-bold">
-            You&rsquo;ve been leading for years.
+            That one team member
             <br />
-            Why is it still this hard?
+            is costing you more than you think.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted max-w-[560px] mx-auto leading-relaxed">
-            Most leadership advice is written for people who&rsquo;ve never led anyone.
-            This isn&rsquo;t that.
+            Most managers let it go on too long. They hope it will sort itself out.
+            It doesn&rsquo;t. I&rsquo;ll show you exactly what to do instead.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/email-course"
               className="bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors"
             >
-              Book a Discovery Call
+              Get the Free Email Course
             </Link>
             <Link
-              href="/webinar"
+              href="/programs"
               className="border border-navy text-navy px-10 py-4 rounded text-base font-semibold hover:bg-navy hover:text-white transition-colors"
             >
-              Watch the Free Masterclass
+              See the Course &mdash; $99
             </Link>
           </div>
-          <p className="mt-3 text-xs text-muted">
-            4 hours. No fluff. What 36 years actually taught me.
-          </p>
         </div>
       </section>
 
@@ -104,7 +101,7 @@ export default function HomePage() {
           {[
             { number: "36 Years", label: "Leadership Experience" },
             { number: "1,000+", label: "Leaders Coached" },
-            { number: "14+", label: "Social Channels" },
+            { number: "120,000+", label: "Followers Across Platforms" },
             { number: "4,500+", label: "Podcast Listeners/Episode" },
           ].map((stat) => (
             <div key={stat.label} className="md:border-r md:last:border-r-0 border-white/20">
@@ -195,30 +192,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Programs Teaser */}
+      {/* Two Ways to Start */}
       <section className="py-20 md:py-30 px-6">
         <div className="max-w-[1040px] mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
-            Three ways to start.
+            Two ways to start.
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-[800px] mx-auto">
             <div className="border border-subtle rounded p-8 md:p-10">
-              <p className="text-xs tracking-[0.15em] uppercase text-muted">Self-Paced Course</p>
+              <p className="text-xs tracking-[0.15em] uppercase text-muted">Free Email Course</p>
               <h3 className="font-serif text-2xl font-bold mt-3">
-                Lead Without Losing It
+                Managing Difficult Employees
               </h3>
-              <p className="text-2xl font-serif font-bold text-navy mt-4">&euro;99</p>
               <p className="text-sm text-muted mt-4 leading-relaxed">
-                29 video lessons on managing difficult team members &mdash; without burning out or losing authority.
+                Five emails. Five types of difficult employees. What to say, what to do, and how to stop letting it drain you.
               </p>
-              <a
-                href="https://myablefy.com/s/mitarbeiterfuehren/team-that-delivers"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/email-course"
                 className="inline-block mt-6 text-sm text-navy font-medium hover:underline"
               >
-                Get the Course &rarr;
-              </a>
+                Get the Free Email Course &rarr;
+              </Link>
             </div>
             <div className="border border-subtle rounded p-8 md:p-10 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-navy rounded-t" />
@@ -227,41 +221,20 @@ export default function HomePage() {
                   Most Popular
                 </span>
               </div>
-              <p className="text-xs tracking-[0.15em] uppercase text-muted">6-Month Programme</p>
+              <p className="text-xs tracking-[0.15em] uppercase text-muted">Self-Paced Course</p>
               <h3 className="font-serif text-2xl font-bold mt-3">
-                The Leadership Edge
+                Lead Without Losing It
               </h3>
-              <p className="text-2xl font-serif font-bold text-navy mt-4">From &euro;3,900</p>
+              <p className="text-2xl font-serif font-bold text-navy mt-4">$99 USD</p>
               <p className="text-sm text-muted mt-4 leading-relaxed">
-                A structured programme for leaders who know they need to change &mdash; and are ready to do the work.
+                29 video lessons on managing difficult team members &mdash; without burning out or losing authority.
+                Hosted on Skool. Start today.
               </p>
               <Link
-                href="/programs#leadership-edge"
+                href="/programs"
                 className="inline-block mt-6 text-sm text-navy font-medium hover:underline"
               >
-                See the Full Programme &rarr;
-              </Link>
-            </div>
-            <div className="border border-subtle rounded p-8 md:p-10 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-navy rounded-t" />
-              <div className="flex items-center gap-3">
-                <p className="text-xs tracking-[0.15em] uppercase text-muted">12-Month Programme</p>
-                <span className="text-[10px] tracking-wider uppercase bg-navy text-white px-2 py-0.5 rounded">
-                  Most Comprehensive
-                </span>
-              </div>
-              <h3 className="font-serif text-2xl font-bold mt-3">
-                The Leadership Partnership
-              </h3>
-              <p className="text-2xl font-serif font-bold text-navy mt-4">From &euro;5,000</p>
-              <p className="text-sm text-muted mt-4 leading-relaxed">
-                Sustained transformation and direct access to Kai across a full year.
-              </p>
-              <Link
-                href="/programs#leadership-partnership"
-                className="inline-block mt-6 text-sm text-navy font-medium hover:underline"
-              >
-                See the Full Programme &rarr;
+                Get the Course &rarr;
               </Link>
             </div>
           </div>
@@ -290,9 +263,10 @@ export default function HomePage() {
             </h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed">
               <p>
-                I&rsquo;m not an academic who studied leadership.
-                I led people. Then I coached the people who led people.
-                Now I help executives do in months what took me decades.
+                He has coached leaders at Telekom, O2, ProSieben, and fast-growing startups across Europe.
+              </p>
+              <p>
+                His approach: no theory, no soft frameworks. Just clear steps that work on Monday morning.
               </p>
             </div>
             <Link
@@ -316,7 +290,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-4 text-muted max-w-[560px] mx-auto leading-relaxed">
             Practical tips, real scenarios, honest coaching insights.
-            Join 64,000+ leaders who follow Kai on Instagram.
+            Join 64,200+ leaders who follow Kai on Instagram.
           </p>
           <a
             href="https://www.instagram.com/managing.difficult.people/"
@@ -338,22 +312,25 @@ export default function HomePage() {
       <section className="bg-navy text-white py-20 md:py-24 px-6">
         <div className="max-w-[720px] mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold">
-            Not ready for a programme yet?
-            <br />
-            Start here.
+            Not ready to buy yet? Start here for free.
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
-            A free 4-hour masterclass. What 36 years of leadership
-            condensed into one session looks like.
+            Five days. One difficult employee type per email.
+          </p>
+          <p className="mt-4 text-white/70 leading-relaxed max-w-[560px] mx-auto">
+            I have spent 36 years in rooms with managers who were being quietly undermined, ignored, or worn down by one person on their team. This email course covers the five types I see most &mdash; and what actually works with each.
+          </p>
+          <p className="mt-4 text-white/70 leading-relaxed">
+            No theory. No padding. Just what to say and do on Monday morning.
           </p>
           <Link
-            href="/webinar"
+            href="/email-course"
             className="inline-block mt-8 bg-white text-navy px-10 py-4 rounded text-base font-semibold hover:bg-white/90 transition-colors"
           >
-            Watch the Free Masterclass
+            Get the Free Email Course
           </Link>
           <p className="mt-3 text-xs text-white/70">
-            No opt-in required for the preview. Full access with email registration.
+            Free. Five emails. Unsubscribe any time.
           </p>
         </div>
       </section>

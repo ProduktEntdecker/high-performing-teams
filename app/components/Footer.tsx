@@ -30,22 +30,15 @@ export function Footer() {
           <div className="flex flex-col md:items-end gap-3">
             <div className="flex gap-6 text-sm">
               <Link href="/programs" className="hover:text-navy transition-colors">
-                Programmes
+                Course
+              </Link>
+              <Link href="/email-course" className="hover:text-navy transition-colors">
+                Free Email Course
               </Link>
               <Link href="/about" className="hover:text-navy transition-colors">
                 About
               </Link>
-              <Link href="/contact" className="hover:text-navy transition-colors">
-                Contact
-              </Link>
-              {/* Community-Link kommt sobald Skool-URL da ist */}
             </div>
-            <Link
-              href="/contact"
-              className="text-sm text-navy font-medium hover:underline"
-            >
-              Book a Discovery Call &rarr;
-            </Link>
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-subtle flex flex-col sm:flex-row justify-between gap-4 text-xs text-muted">
