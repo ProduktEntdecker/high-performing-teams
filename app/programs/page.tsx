@@ -31,7 +31,7 @@ export default function ProgramsPage() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="https://www.skool.com/lead-without-losing-it"
+                href="https://www.skool.com/managing-difficult-employees-8595"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors text-center"
@@ -142,7 +142,7 @@ export default function ProgramsPage() {
             Stop letting one difficult person drain your energy every week.
           </p>
           <a
-            href="https://www.skool.com/lead-without-losing-it"
+            href="https://www.skool.com/managing-difficult-employees-8595"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-8 bg-white text-navy px-8 py-3.5 rounded text-sm font-medium hover:bg-white/90 transition-colors"
