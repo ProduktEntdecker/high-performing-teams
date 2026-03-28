@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import EmailSignupForm from "../components/EmailSignupForm";
 
 export const metadata: Metadata = {
-  title: "Free Email Course — Managing Difficult Employees",
+  title: "Free 9-Day Leadership Email Training — High Performing Teams",
   description:
-    "A free email course by Kai Boyd. Five days. One difficult employee type per email. Real scripts you can use in your next conversation.",
+    "Join Kai Boyd's free 9-day email training. Learn how to handle difficult people — with calm, clarity, and control. 409+ leaders already enrolled.",
 };
 
 export default function EmailCoursePage() {
@@ -16,40 +17,20 @@ export default function EmailCoursePage() {
         <div className="max-w-[1040px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div>
             <p className="text-xs tracking-[0.2em] uppercase text-muted mb-6">
-              Free Email Course
+              Free Email Training
             </p>
             <h1 className="font-serif text-4xl md:text-5xl leading-[1.15] font-bold">
-              Managing Difficult Employees
+              Join my 9-day leadership email training
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed">
-              A free email course. Five days. One difficult employee type per email.
-              Real scripts you can use in your next conversation.
+              Learn how to handle difficult people &mdash; with calm, clarity, and control.
             </p>
 
             <div className="mt-8">
-              {/* TODO: Email signup form — connect to email provider */}
-              <div className="border border-subtle rounded-lg p-6 bg-[#F5F5F7]">
-                <p className="font-serif text-lg font-bold">Get the Free Email Course</p>
-                <p className="text-sm text-muted mt-2">
-                  Enter your email to start the five-day course.
-                </p>
-                <div className="mt-4 flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    className="flex-1 px-4 py-3 border border-subtle rounded text-sm bg-white"
-                  />
-                  <button
-                    type="button"
-                    className="bg-navy text-white px-6 py-3 rounded text-sm font-semibold hover:bg-navy-light transition-colors whitespace-nowrap"
-                  >
-                    Get the Free Email Course
-                  </button>
-                </div>
-              </div>
+              <EmailSignupForm buttonText="Start the Training" />
             </div>
             <p className="mt-3 text-xs text-muted">
-              Free. Five emails. Unsubscribe any time.
+              Free. Nine emails over nine days. Unsubscribe any time.
             </p>
           </div>
 
@@ -69,15 +50,15 @@ export default function EmailCoursePage() {
               <div className="mt-4 space-y-2 text-sm text-muted">
                 <div className="flex justify-between">
                   <span>Format</span>
-                  <span className="font-medium text-foreground">Email (5 days)</span>
+                  <span className="font-medium text-foreground">Email (9 days)</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Price</span>
                   <span className="font-medium text-foreground">Free</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Content</span>
-                  <span className="font-medium text-foreground">5 employee types + scripts</span>
+                  <span>Already enrolled</span>
+                  <span className="font-medium text-foreground">409+ leaders</span>
                 </div>
               </div>
             </div>
@@ -89,7 +70,7 @@ export default function EmailCoursePage() {
       <section className="py-20 md:py-30 px-6 bg-[#F5F5F7]">
         <div className="max-w-[720px] mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-12">
-            Five days. Five difficult types.
+            Nine days. Nine leadership lessons.
           </h2>
           <div className="space-y-8">
             {[
@@ -98,6 +79,10 @@ export default function EmailCoursePage() {
               "The Know-It-All — the one who questions everything, corrects everyone, and makes every meeting longer than it needs to be.",
               "The Drama Creator — the team member who turns small issues into crises and pulls others into conflict.",
               "The Blocker — the person who resists every change, slows every decision, and says 'that won't work' before hearing the idea.",
+              "The Boundary Crosser — how to handle pushback, protect your authority, and set limits without becoming the villain.",
+              "The Feedback Conversation — the exact script for addressing poor performance without destroying the relationship.",
+              "The Escalation — when talking doesn't work. How to document, escalate, and protect yourself legally.",
+              "The Reset — how to rebuild team trust after a difficult period and create a culture where these problems don't keep recurring.",
             ].map((item, i) => (
               <div key={i} className="flex gap-5">
                 <span className="font-serif text-xl font-bold text-navy shrink-0">
@@ -126,7 +111,7 @@ export default function EmailCoursePage() {
                 His approach: no theory, no soft frameworks. Just clear steps that work on Monday morning.
               </p>
               <p className="font-medium text-foreground">
-                This email course contains exactly what he tells leaders one-to-one &mdash; at no cost.
+                This email training contains exactly what he tells leaders one-to-one &mdash; at no cost.
               </p>
             </div>
           </div>
@@ -146,27 +131,16 @@ export default function EmailCoursePage() {
       <section className="bg-navy text-white py-20 md:py-24 px-6">
         <div className="max-w-[720px] mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold">
-            Start the free email course today.
+            Start the free email training today.
           </h2>
           <p className="mt-4 text-white/70 leading-relaxed">
-            Five days. Real scripts. No fluff.
+            Nine days. Real scripts. No fluff.
           </p>
-          {/* TODO: Connect to email signup */}
-          <div className="mt-8 max-w-[400px] mx-auto flex flex-col sm:flex-row gap-3">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 rounded text-sm text-foreground"
-            />
-            <button
-              type="button"
-              className="bg-white text-navy px-6 py-3 rounded text-sm font-semibold hover:bg-white/90 transition-colors whitespace-nowrap"
-            >
-              Start Free
-            </button>
+          <div className="mt-8 max-w-[480px] mx-auto">
+            <EmailSignupForm variant="dark" buttonText="Start Free" />
           </div>
           <p className="mt-3 text-xs text-white/70">
-            Free. Five emails. Unsubscribe any time.
+            Free. Nine emails. Unsubscribe any time.
           </p>
           <p className="mt-6">
             <Link href="/programs" className="text-sm text-white/70 hover:text-white">
