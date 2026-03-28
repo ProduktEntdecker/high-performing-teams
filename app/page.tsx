@@ -32,7 +32,7 @@ export default function HomePage() {
               href="/email-course"
               className="bg-navy text-white px-10 py-4 rounded text-base font-semibold hover:bg-navy-light transition-colors"
             >
-              Get the Free Email Course
+              Start the Free Email Training
             </Link>
             <Link
               href="/programs"
@@ -200,18 +200,18 @@ export default function HomePage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-[800px] mx-auto">
             <div className="border border-subtle rounded p-8 md:p-10">
-              <p className="text-xs tracking-[0.15em] uppercase text-muted">Free Email Course</p>
+              <p className="text-xs tracking-[0.15em] uppercase text-muted">Free Email Training</p>
               <h3 className="font-serif text-2xl font-bold mt-3">
-                Managing Difficult Employees
+                9-Day Leadership Email Training
               </h3>
               <p className="text-sm text-muted mt-4 leading-relaxed">
-                Five emails. Five types of difficult employees. What to say, what to do, and how to stop letting it drain you.
+                Nine days. Learn how to handle difficult people &mdash; with calm, clarity, and control. 409+ leaders already enrolled.
               </p>
               <Link
                 href="/email-course"
                 className="inline-block mt-6 text-sm text-navy font-medium hover:underline"
               >
-                Get the Free Email Course &rarr;
+                Start the Free Training &rarr;
               </Link>
             </div>
             <div className="border border-subtle rounded p-8 md:p-10 relative">
@@ -315,10 +315,10 @@ export default function HomePage() {
             Not ready to buy yet? Start here for free.
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
-            Five days. One difficult employee type per email.
+            Nine days. Learn how to handle difficult people &mdash; with calm, clarity, and control.
           </p>
           <p className="mt-4 text-white/70 leading-relaxed max-w-[560px] mx-auto">
-            I have spent 36 years in rooms with managers who were being quietly undermined, ignored, or worn down by one person on their team. This email course covers the five types I see most &mdash; and what actually works with each.
+            I have spent 36 years in rooms with managers who were being quietly undermined, ignored, or worn down by one person on their team. This training covers the types I see most &mdash; and what actually works with each.
           </p>
           <p className="mt-4 text-white/70 leading-relaxed">
             No theory. No padding. Just what to say and do on Monday morning.
@@ -327,10 +327,10 @@ export default function HomePage() {
             href="/email-course"
             className="inline-block mt-8 bg-white text-navy px-10 py-4 rounded text-base font-semibold hover:bg-white/90 transition-colors"
           >
-            Get the Free Email Course
+            Start the Free Email Training
           </Link>
           <p className="mt-3 text-xs text-white/70">
-            Free. Five emails. Unsubscribe any time.
+            Free. Nine emails. Unsubscribe any time.
           </p>
         </div>
       </section>

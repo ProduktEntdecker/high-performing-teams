@@ -117,7 +117,7 @@ export default function ProgramsPage() {
               },
               {
                 q: "I'm not sure I need a full course. Is there something smaller?",
-                a: "Yes. Start with the free email course — five days, one difficult employee type per email. It will give you a clear sense of whether Kai's approach works for you.",
+                a: "Yes. Start with the free 9-day email training. It covers how to handle difficult people with calm, clarity, and control. It will give you a clear sense of whether Kai's approach works for you.",
               },
             ].map((faq) => (
               <details key={faq.q} className="group">
